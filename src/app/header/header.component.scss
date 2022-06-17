@@ -1,0 +1,51 @@
+nav {
+  background: transparent;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+};
+
+.NavLink {
+  color: rgb(119, 119, 121);
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  &:hover {
+    color: #f6f6f6;
+  }
+};
+
+.Logo {
+    width: 15vh;
+    height: 15vh;
+};
+
+.NavMenu {
+  display: flex;
+  align-items: center;
+  margin-right: -24px;
+
+  .menu-item {
+    margin-left: 1rem;
+  };
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  };
+};
+
+.NavBtn {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+};
